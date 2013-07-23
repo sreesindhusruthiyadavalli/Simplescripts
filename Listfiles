@@ -1,0 +1,29 @@
+/* to get the files in a folder path*/
+
+
+objStartFolder = InputBox("Enter the folder path")
+ 
+ 
+ 
+Set objExcel = CreateObject("Excel.Application")
+ 
+objExcel.Visible = True
+ 
+objExcel.Workbooks.Add
+ 
+intRow = 2
+ 
+ 
+ 
+objExcel.Cells(1, 1).Value = "Folder"
+ 
+objExcel.Cells(1, 2).Value = "File Name"
+ 
+objExcel.Cells(1, 3).Value = "DateCreated"
+ 
+objExcel.Cells(1, 4).Value = "DateLastAccessed"
+ 
+objExcel.Cells(1, 5).Value = "DateLastModified"
+ 
+objExcel.Cells(1, 6).Value = "File Size"
+ 
